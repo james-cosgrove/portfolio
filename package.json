@@ -4,7 +4,8 @@
   "description": "personal portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/james-cosgrove/portfolio/issues"
   },
-  "homepage": "https://github.com/james-cosgrove/portfolio#readme"
+  "homepage": "https://github.com/james-cosgrove/portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }
