@@ -21,8 +21,8 @@ gulp.task('sass-to-css', function() {
   }));
 });
 
-gulp.tast('reload', function() {
-  browserSync.reaload();
+gulp.task('reload', function() {
+  browserSync.reload();
 });
 
 // watches for any saved changes on js, html and scss files
@@ -37,5 +37,5 @@ gulp.task('sync', function() {
     server: {
       baseDir: 'app'
     },
-  }):
-}):
+  });
+});
