@@ -9,6 +9,14 @@ html {
     height: 100%;
 }
 
+.fa {
+  color: black;
+}
+
+ul.nav {
+  float: right;
+}
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -26,7 +34,11 @@ html {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #836997;
 }
 
 .about-section {
@@ -36,7 +48,7 @@ html {
     background: #eee;
 }
 
-.services-section {
+.projects-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
