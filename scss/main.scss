@@ -1,10 +1,26 @@
 
-$text-color: rgb(30, 30, 30);
+$text-color: rgb(40, 40, 40);
 
 
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-toggle {
+  border: none;
+  background-color: transparent !important;
+  margin-top: 20px;
+  transition: all 0.3s linear;
+}
+
+.navbar-toggle:hover {
+  transform: scale(1.4);
+  transition: all 0.3s linear;
+}
+
+.container {
+  width: 100vw;
 }
 
 .navbar-default {
@@ -12,6 +28,7 @@ body {
 	border-color:transparent;
 	background-image:none;
 	box-shadow:none;
+  transition: all 0.3s linear;
 }
 
 html {
@@ -24,57 +41,56 @@ ul.nav {
 }
 
 .navbar {
-    a,
-    .title-link {
+    a {
       font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
-      font-weight: lighter;
+      font-weight: 400;
       font-size: 2rem;
-      transition: all 0.2s linear;
+      transition: all 0.3s linear;
       color: $text-color !important;
-      margin-left: 20px;
       background-color: transparent !important;
       letter-spacing: 2px;
+      margin-top: 15px;
     }
     .navbar-brand {
-      border: 2px solid $text-color;
-      letter-spacing: 5px;
-      transition: all 0.2s linear;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      transition: all 0.3s linear;
     }
 }
 
 .navbar a:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   cursor: pointer;
 }
 
-.navbar-brand:hover {
-  border: 2px solid transparent;
+.navbar .navbar-brand:hover {
   cursor: pointer;
+  transform: scale(1);
 }
 
 .top-nav-collapse {
-  background-color: rgba(30, 30, 30, 0.4) !important;
-  .navbar-brand {
-    border: 2px solid transparent;
+  background-color: rgba(30, 30, 30, 0.8) !important;
+  transition: all 0.3s linear;
+  border: 0px;
+  .navbar-toggle {
+    color: rgb(210,210,210) !important;
+    margin-top: 8px;
+    transition: all 0.3s linear;
+  }
+  a {
+    margin-top: 0;
+    color: rgb(210,210,210) !important;
   }
 }
 
-@media(min-width:767px) {
-    .navbar {
-        padding: 15px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
-    }
-    .top-nav-collapse {
-        padding: 0;
-    }
+.navbar-collapse {
+  border: 0px;
 }
 
 .fa-angle-down {
   color: $text-color;
-  position:inherit;
-  margin: 400px 0 0 0;
+  position: static;
+  margin: 0 0 0 0;
   transition: all .2s linear;
 }
 
@@ -85,7 +101,7 @@ ul.nav {
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     left: 0;
     top: 0;
@@ -93,34 +109,111 @@ ul.nav {
     bottom: 0;
     background: #CCC;
     h1 {
-      letter-spacing: 5px;
-      font-size: 6rem;
+      letter-spacing: 4px;
+      font-size: 8rem;
       color: $text-color;
       font-weight: 300;
+      font-family: 'Maven Pro', sans-serif;
+      margin-top: 170px;
+    }
+    .fa {
+      margin-top: 150px;
     }
 }
 
 .about-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 25px;
     text-align: center;
     background: #eee;
+    h1 {
+      letter-spacing: 5px;
+      font-size: 6rem;
+      color: $text-color;
+      font-weight: 300;
+    }
+    img {
+      height: 300px;
+      width: auto;
+      border-radius: 300px;
+    }
 }
 
 .projects-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 25px;
     text-align: center;
     background: #fff;
+    h1 {
+      letter-spacing: 5px;
+      font-size: 5rem;
+      color: $text-color;
+      font-weight: 300;
+      margin-top: 50px;
+    }
+    .project-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      img {
+        height: 180px;
+        width: 290px;
+        margin: 40px;
+        transition: all .2s linear;
+      }
+    }
+}
+
+.project-images img:hover {
+  transform: scale(1.2);
+  transition: all .2s linear;
 }
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 25px;
     text-align: center;
     background: #eee;
+    h1 {
+      letter-spacing: 5px;
+      font-size: 5rem;
+      color: $text-color;
+      font-weight: 300;
+      margin-top: 50px;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      font-size: 3.5rem;
+      a {
+        width: 320px;
+        margin-top: 150px;
+        color: $text-color;
+      }
+    }
 }
 
-// color: rgb(128,179,171); color: rgb(30,41,58);
-// color: rgb(255,207,160); color: rgb(234,92,68);
-// color: rgb(212,121,121); color: rgb(130,105,151);
+@media all and (max-width:915px) {
+  .intro-section h1 {
+    font-size: 6rem;
+  }
+}
+
+@media all and (max-width:768px) {
+  .top-nav-collapse {
+      padding: 0;
+  }
+  .navbar {
+    background-color: rgba(30, 30, 30, 0.8) !important;
+    .navbar-toggle {
+      color: rgb(210,210,210) !important;
+    }
+    a {
+      color: rgb(210,210,210) !important;
+    }
+  }
+  .intro-section h1 {
+    font-size: 6rem;
+  }
+}
