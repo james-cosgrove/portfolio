@@ -1,33 +1,86 @@
 
+$text-color: rgb(30, 30, 30);
+
+
 body {
     width: 100%;
     height: 100%;
 }
 
-html {
-    width: 100%;
-    height: 100%;
+.navbar-default {
+	background-color:transparent !important;
+	border-color:transparent;
+	background-image:none;
+	box-shadow:none;
 }
 
-.fa {
-  color: black;
+html {
+  width: 100%;
+  height: 100%;
 }
 
 ul.nav {
   float: right;
 }
 
+.navbar {
+    a,
+    .title-link {
+      font-family: "Gotham SSm A","Gotham SSm B",sans-serif;
+      font-weight: lighter;
+      font-size: 2rem;
+      transition: all 0.2s linear;
+      color: $text-color !important;
+      margin-left: 20px;
+      background-color: transparent !important;
+      letter-spacing: 2px;
+    }
+    .navbar-brand {
+      border: 2px solid $text-color;
+      letter-spacing: 5px;
+      transition: all 0.2s linear;
+    }
+}
+
+.navbar a:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.top-nav-collapse {
+  background-color: rgba(30, 30, 30, 0.4) !important;
+  .navbar-brand {
+    border: 2px solid transparent;
+  }
+}
+
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 15px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
-
     .top-nav-collapse {
         padding: 0;
     }
+}
+
+.fa-angle-down {
+  color: $text-color;
+  position:inherit;
+  margin: 400px 0 0 0;
+  transition: all .2s linear;
+}
+
+.fa-angle-down:hover {
+  transform: scale(1.4);
+  cursor: pointer;
 }
 
 .intro-section {
@@ -38,7 +91,13 @@ ul.nav {
     top: 0;
     right: 0;
     bottom: 0;
-    background: #836997;
+    background: #CCC;
+    h1 {
+      letter-spacing: 5px;
+      font-size: 6rem;
+      color: $text-color;
+      font-weight: 300;
+    }
 }
 
 .about-section {
@@ -61,3 +120,7 @@ ul.nav {
     text-align: center;
     background: #eee;
 }
+
+// color: rgb(128,179,171); color: rgb(30,41,58);
+// color: rgb(255,207,160); color: rgb(234,92,68);
+// color: rgb(212,121,121); color: rgb(130,105,151);
