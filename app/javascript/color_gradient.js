@@ -2,9 +2,9 @@
 var $div = document.getElementById("intro");
 // rgb vals of the gradients
 var gradients = [
-  { start: [128,179,171], stop: [30,41,58] },
+  { start: [226,58,2], stop: [249,90,42] },
   { start: [255,207,160], stop: [234,92,68] },
-  { start: [212,121,121], stop: [130,105,151] }
+  { start: [255,153,0], stop: [255,199,0] }
 ];
 // how long for each transition
 var transition_time = 4;
