@@ -1,10 +1,10 @@
 // target to give background to
-var $div = document.getElementById("intro");
+var $container = document.getElementById("intro");
 // rgb vals of the gradients
 var gradients = [
-  { start: [226,58,2], stop: [249,90,42] },
-  { start: [255,207,160], stop: [234,92,68] },
-  { start: [255,153,0], stop: [255,199,0] }
+  { start: [139,22,232], stop: [34,37,147] },
+  { start: [241,222,11], stop: [34,100,199] },
+  { start: [215,253,40], stop: [55,99,140] }
 ];
 // how long for each transition
 var transition_time = 4;
@@ -23,7 +23,7 @@ var rgb_values = {
   stop: [0,0,0]
 }; // the current rgb values, gets altered by rgb steps on each interval
 var prefixes = ["-webkit-","-moz-","-o-","-ms-",""]; // for looping through adding styles
-var div_style = $div.style; // short cut to actually adding styles
+var container_style = $container.style; // short cut to actually adding styles
 var color1, color2;
 
 // sets next current and next index of gradients array
@@ -71,9 +71,9 @@ function updateGradient(){
     color2 = t_color2;
 
     // update DOM element style attribute
-    div_style.backgroundImage = "-webkit-gradient(linear, left bottom, right top, from("+color1+"), to("+color2+"))";
+    container_style.backgroundImage = "-webkit-gradient(linear, left bottom, right top, from("+color1+"), to("+color2+"))";
     for (var i = 0; i < 4; i++) {
-      div_style.backgroundImage = prefixes[i]+"linear-gradient(45deg, "+color1+", "+color2+")";
+      container_style.backgroundImage = prefixes[i]+"linear-gradient(45deg, "+color1+", "+color2+")";
     }
   }
 
@@ -90,7 +90,7 @@ function updateGradient(){
     calc_steps();
   }
 
-  if (div_style.backgroundImage.indexOf("gradient") != -1) {
+  if (container_style.backgroundImage.indexOf("gradient") != -1) {
     window.requestAnimationFrame(updateGradient)
   }
 }
