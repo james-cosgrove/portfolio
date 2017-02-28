@@ -3,9 +3,8 @@ var path = require('path');
 var server = express();
 
 // const PORT = 3000;
-var port_number = server.listen(process.env.PORT || 3000);
+var portNumber = server.listen(process.env.PORT || 3000);
 
-server.set('views', './');
 server.use(express.static(path.join(__dirname, './')));
 
 server.get('/', function(request, response) {
@@ -16,4 +15,4 @@ server.get('/', function(request, response) {
 //   console.log(`Example app listening on port ${PORT}`);
 // });
 
-server.listen(port_number);
+server.listen(portNumber);
