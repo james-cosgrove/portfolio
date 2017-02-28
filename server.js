@@ -11,8 +11,8 @@ server.get('/', function(request, response) {
   response.render('index');
 });
 
-// server.listen(PORT, function() {
-//   console.log(`Example app listening on port ${PORT}`);
-// });
+server.listen(PORT, function() {
+  console.log(`Example app listening on port ${PORT}`);
+});
 
 server.listen(portNumber);
