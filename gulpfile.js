@@ -6,10 +6,10 @@ const sassPath = './app/scss/**/*.scss';
 const scriptPath = './app/javascript/**/*.js';
 const htmlPath = './app/index.html';
 
-// var handleError = function(error) {
-//   console.error('\nError: ', error.message, '\n');
-//   this.emit('end');
-// };
+var handleError = function(error) {
+  console.error('\nError: ', error.message, '\n');
+  this.emit('end');
+};
 
 // compile scss into css
 gulp.task('sass-to-css', function() {
