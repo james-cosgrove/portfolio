@@ -5,7 +5,7 @@ var server = express();
 // const PORT = 3000;
 var portNumber = server.listen(process.env.PORT);
 
-server.use(express.static(path.join(__dirname, './')));
+// server.use(express.static(path.join(__dirname, './')));
 
 server.get('/', function(request, response) {
   response.render('index');
