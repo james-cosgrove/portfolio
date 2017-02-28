@@ -6,7 +6,6 @@ var server = express();
 var port_number = server.listen(process.env.PORT || 3000);
 
 server.set('views', './');
-server.set('view engine', 'ejs');
 server.use(express.static(path.join(__dirname, './')));
 
 server.get('/', function(request, response) {
