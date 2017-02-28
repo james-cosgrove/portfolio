@@ -17,7 +17,7 @@ gulp.task('sass-to-css', function() {
   .pipe(sass())
   .pipe(gulp.dest('./app/css'))
   .pipe(browserSync.reload({
-    stream: false
+    stream: true
   }));
 });
 

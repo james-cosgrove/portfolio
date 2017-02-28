@@ -9,8 +9,8 @@
 6 silly lifecycle portfolio@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle portfolio@1.0.0~start: portfolio@1.0.0
 8 verbose lifecycle portfolio@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle portfolio@1.0.0~start: PATH: /Users/Jimbo/.nvm/versions/node/v6.9.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/Jimbo/WDI10/projects/portfolio/app/node_modules/.bin:/Users/Jimbo/.rvm/gems/ruby-2.3.1/bin:/Users/Jimbo/.rvm/gems/ruby-2.3.1@global/bin:/Users/Jimbo/.rvm/rubies/ruby-2.3.1/bin:/Users/Jimbo/.nvm/versions/node/v6.9.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Jimbo/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
-10 verbose lifecycle portfolio@1.0.0~start: CWD: /Users/Jimbo/WDI10/projects/portfolio/app
+9 verbose lifecycle portfolio@1.0.0~start: PATH: /Users/Jimbo/.nvm/versions/node/v6.9.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/Jimbo/WDI10/projects/portfolio/node_modules/.bin:/Users/Jimbo/.rvm/gems/ruby-2.3.1/bin:/Users/Jimbo/.rvm/gems/ruby-2.3.1@global/bin:/Users/Jimbo/.rvm/rubies/ruby-2.3.1/bin:/Users/Jimbo/.nvm/versions/node/v6.9.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Jimbo/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
+10 verbose lifecycle portfolio@1.0.0~start: CWD: /Users/Jimbo/WDI10/projects/portfolio
 11 silly lifecycle portfolio@1.0.0~start: Args: [ '-c', 'gulp watch' ]
 12 silly lifecycle portfolio@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle portfolio@1.0.0~start: Failed to exec start script
