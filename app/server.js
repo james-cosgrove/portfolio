@@ -5,14 +5,15 @@ var server = express();
 // const PORT = 3000;
 var portNumber = process.env.PORT || 3000;
 
-server.use(express.static(path.join(__dirname, './')));
+// server.use(express.static(path.join(__dirname, './')));
+server.use('/static', express.static(path.join(__dirname, 'public')));
 
 server.get('/', function(request, response) {
   response.render('index');
 });
 
 server.listen(portNumber, function() {
-  console.log(`App listening on port ${PORT}`);
+  console.log(`App listening on port ${portNumber}`);
 });
 
 // server.listen(portNumber);
