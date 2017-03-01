@@ -137,6 +137,13 @@ ul.nav {
     color: #282828;
     font-weight: 300;
     margin-top: 70px; }
+  .projects-section h3 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: #282828;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .projects-section .project-images {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +151,7 @@ ul.nav {
     .projects-section .project-images img {
       height: 160px;
       width: 260px;
-      margin: 40px;
+      margin: 10px 40px 10px 40px;
       transition: all .2s ease;
       border: 3px solid rgba(1, 1, 1, 0.8);
       border-radius: 3px; }

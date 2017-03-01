@@ -172,6 +172,14 @@ ul.nav {
     font-weight: 300;
     margin-top: 70px;
   }
+  h3 {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: $text-color;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .project-images {
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +187,7 @@ ul.nav {
     img {
       height: 160px;
       width: 260px;
-      margin: 40px;
+      margin: 10px 40px 10px 40px;
       transition: all .2s ease;
       border: 3px solid rgba(1,1,1,0.8);
       border-radius: 3px;
