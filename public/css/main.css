@@ -145,7 +145,9 @@ ul.nav {
       height: 160px;
       width: 260px;
       margin: 40px;
-      transition: all .2s ease; }
+      transition: all .2s ease;
+      border: 3px solid rgba(1, 1, 1, 0.8);
+      border-radius: 3px; }
   .projects-section .container {
     height: 90vh; }
 
