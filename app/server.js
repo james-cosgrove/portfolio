@@ -6,7 +6,7 @@ var server = express();
 var portNumber = process.env.PORT || 3000;
 
 // server.use(express.static(path.join(__dirname, './')));
-server.set('views', './');
+// server.set('views', './');
 server.set('view engine', 'ejs');
 server.use('/static', express.static(path.join(__dirname, 'public')));
 
