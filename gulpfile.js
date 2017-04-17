@@ -32,10 +32,10 @@ gulp.task('watch', ['sass-to-css', /*'sync'*/], function() {
   gulp.watch(htmlPath, ['reload']);
 });
 
-// gulp.task('sync', function() {
-//   browserSync.init({
-//     server: {
-//       baseDir: 'app'
-//     },
-//   });
-// });
+gulp.task('sync', function() {
+  browserSync.init({
+    server: {
+      baseDir: 'app'
+    },
+  });
+});
