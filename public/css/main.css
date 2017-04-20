@@ -145,8 +145,6 @@ ul.nav {
     margin-top: 10px;
     margin-bottom: 10px;
     transition: all .2s ease; }
-  .projects-section a:hover {
-    text-decoration: none; }
   .projects-section .project-images {
     display: flex;
     flex-wrap: wrap;
